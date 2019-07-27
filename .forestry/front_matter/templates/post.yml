@@ -1,49 +1,49 @@
 ---
 label: Post
-is_partial: false
+hide_body: false
 fields:
+- type: text
+  name: title
+  label: Title
+  description: The title of the page.
+  config:
+    required: true
+- type: text
+  name: excerpt
+  label: Description
+  description: The text shown just below the post title on thumbnail.
+- type: file
+  name: image_thumbnail
+  label: Thumbnail Image
+  description: The image shown in the feature.
+- type: field_group
+  name: button_link
+  label: Button Link
+  description: The button link
+  fields:
+  - type: text
+    name: name
+    label: Name
+    config:
+      required: true
+  - type: text
+    name: url
+    label: Link url
+    config:
+      required: true
   - type: text
     name: title
-    label: Title
-    description: The title of the page.
+    label: Link title
     config:
       required: true
-  - type: text
-    name: excerpt
-    label: Description
-    description: The text shown just below the post title on thumbnail.
-  - type: file
-    name: image_thumbnail
-    label: Thumbnail Image
-    description: The image shown in the feature.
-  - type: field_group
-    name: button_link
-    label: Button Link
-    description: The button link
-    fields:
-      - type: text
-        name: name
-        label: Name
-        config:
-          required: true
-      - type: text
-        name: url
-        label: Link url
-        config:
-          required: true
-      - type: text
-        name: title
-        label: Link title
-        config:
-          required: true
-  - type: text
-    name: template
-    label: Template
-    hidden: true
-    default: post
-    config:
-      required: true
+- type: text
+  name: template
+  label: Template
+  hidden: true
+  default: post
+  config:
+    required: true
 pages:
-  - src/pages/posts/post1.md
-  - src/pages/posts/post2.md
-  - src/pages/posts/post3.md
+- src/pages/posts/post3.md
+- src/pages/posts/post2.md
+- src/pages/posts/post1.md

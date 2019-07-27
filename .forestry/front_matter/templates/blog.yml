@@ -1,19 +1,19 @@
 ---
 label: Blog
-is_partial: false
+hide_body: false
 fields:
-  - type: text
-    name: title
-    label: Title
-    description: The title of the page.
-    config:
-      required: true
-  - type: text
-    name: template
-    label: Template
-    hidden: true
-    default: blog
-    config:
-      required: true
+- type: text
+  name: title
+  label: Title
+  description: The title of the page.
+  config:
+    required: true
+- type: text
+  name: template
+  label: Template
+  hidden: true
+  default: blog
+  config:
+    required: true
 pages:
-  - src/pages/blog.md
+- src/pages/blog.md
