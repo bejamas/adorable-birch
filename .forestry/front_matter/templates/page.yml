@@ -1,23 +1,24 @@
 ---
 label: Page
 hide_body: false
-is_partial: false
 fields:
-  - type: text
-    name: title
-    label: Title
-    description: The title of the page.
-    config:
-      required: true
-  - type: text
-    name: heading
-    label: Heading
-    description: The text shown just below the page title.
-  - type: text
-    name: template
-    label: Template
-    hidden: true
-    default: page
-    config:
-      required: true
-pages: []
+- type: text
+  name: title
+  label: Title
+  description: The title of the page.
+  config:
+    required: true
+- type: text
+  name: heading
+  label: Heading
+  description: The text shown just below the page title.
+- type: text
+  name: template
+  label: Template
+  hidden: true
+  default: page
+  config:
+    required: true
+pages:
+- src/pages/index.md
+- src/pages/about.md
