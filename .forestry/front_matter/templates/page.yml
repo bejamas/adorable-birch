@@ -20,6 +20,4 @@ fields:
     default: page
     config:
       required: true
-pages:
-  - src/pages/about.md
-  - src/pages/index.md
+pages: []

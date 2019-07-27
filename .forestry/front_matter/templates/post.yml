@@ -43,7 +43,4 @@ fields:
     default: post
     config:
       required: true
-pages:
-  - src/pages/posts/post1.md
-  - src/pages/posts/post2.md
-  - src/pages/posts/post3.md
+pages: []
