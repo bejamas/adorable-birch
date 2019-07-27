@@ -1,0 +1,51 @@
+---
+label: Global Site Config
+hide_body: true
+is_partial: false
+fields:
+  - type: text
+    name: title
+    label: Title
+    description: Site title
+    config:
+      required: true
+  - type: field_group
+    name: header
+    label: Header Configuration
+    fields:
+      - type: file
+        name: logo_img
+        label: Logo
+        description: The logo image displayed on the left side.
+  - type: field_group
+    name: footer
+    label: Footer Configuration
+    fields:
+      - type: text
+        name: content
+        label: Footer Content
+        description: The copyright text displayed in the footer.
+      - type: file
+        name: logo_img
+        label: Logo
+        description: The logo image displayed on the left side.
+      - type: field_group_list
+        name: socials
+        label: Socials
+        description: A list of social links displayed in the footer.
+        fields:
+          - type: select
+            name: element
+            label: Type of social
+            config:
+              required: true
+              source:
+                type: custom
+              options:
+                - facebook
+                - twitter
+                - linkedin
+                - github
+          - type: text
+            name: url
+            label: URL
